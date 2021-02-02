@@ -37,6 +37,7 @@ class ItemAdapter(
     override fun getItemCount() = dataset.size
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        binding.itemTitle.text = context.resources.getString(dataset[position].stringResourceId) // set item title
+        binding.itemTitle.text = context.resources.getString(dataset[position].stringResourceId) // set title
+        binding.itemImage.setImageResource(dataset[position].imageResourceId) // set image
     }
 }

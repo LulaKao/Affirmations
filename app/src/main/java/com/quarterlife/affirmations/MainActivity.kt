@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binging.root) // add this for view binding
 
         // initialize data
-        val dataList = DataSource().loadAffirmation()
+        val dataList = DataSource().loadAffirmations()
 
         // initialize recyclerView
         val recyclerView = binging.recyclerView
