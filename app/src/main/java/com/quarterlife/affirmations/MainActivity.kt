@@ -11,6 +11,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binging = ActivityMainBinding.inflate(layoutInflater) // add this for view binding
         setContentView(binging.root) // add this for view binding
-
     }
 }
