@@ -3,7 +3,7 @@ package com.quarterlife.affirmations.data
 import com.quarterlife.affirmations.R
 import com.quarterlife.affirmations.model.Affirmation
 
-class Datasource {
+class DataSource {
 
     fun loadAffirmation() : List<Affirmation>{
         return listOf(
