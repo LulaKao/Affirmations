@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
         /*  Use this setting to improve performance if we know that
             changes in content do not change the layout size of the RecyclerView.  */
         recyclerView.setHasFixedSize(true)
+
+        /**     設定 recyclerView 的緩存數量，若不設定的話，內容就會每七個重複一輪。
+         *      資料是抓到正確的，不會重複，但是顯示出來的內容會重複。
+         *      20 是想要緩存的 item 數量，可以根據自己的需要進行調整。 */
+        recyclerView.setItemViewCacheSize(20)
     }
 }
